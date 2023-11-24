@@ -35,14 +35,8 @@
 - The ultimate goal is for the generator to produce data that is so realistic that the discriminator cannot distinguish it from real data.
 - The interplay between the generator and discriminator in a GAN leads to the generation of increasingly realistic data, making GANs a powerful framework for generating high-quality synthetic data, including images, music, text, and more.
 
-# Generating Image
+# Results
 
-'''
-generator.load_weights(os.path.join('archive', 'generatormodel.h5'))
-imgs = generator.predict(tf.random.normal((16, 128, 1)))
-fig, ax = plt.subplots(ncols=4, nrows=4, figsize=(10,10))
-for r in range(4): 
-    for c in range(4): 
-        ax[r][c].imshow(imgs[(r+1)*(c+1)-1])
-'''
+![image](https://github.com/deep-gtm/Image-Generation/assets/70434931/e1887fd7-b3f8-436d-a197-58dfa5f7c8a2)
+
     
